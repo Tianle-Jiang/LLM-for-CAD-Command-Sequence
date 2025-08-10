@@ -1,0 +1,175 @@
+{
+  "entities": {
+    "Sketch1": {
+      "type": "Sketch",
+      "points": {
+        "Point3D1": {
+          "type": "Point3D",
+          "x": -9.6,
+          "y": -7.35,
+          "z": 0.0
+        },
+        "Point3D2": {
+          "type": "Point3D",
+          "x": -10.46,
+          "y": -8.06,
+          "z": 0.0
+        },
+        "Point3D3": {
+          "type": "Point3D",
+          "x": -11.32,
+          "y": -8.02,
+          "z": 0.0
+        },
+        "Point3D4": {
+          "type": "Point3D",
+          "x": -12.27,
+          "y": -8.15,
+          "z": 0.0
+        },
+        "Point3D5": {
+          "type": "Point3D",
+          "x": -13.54,
+          "y": -7.79,
+          "z": 0.0
+        },
+        "Point3D6": {
+          "type": "Point3D",
+          "x": -14.43,
+          "y": -7.53,
+          "z": 0.0
+        }
+      },
+      "curves": {
+        "Arc3D1": {
+          "type": "Arc3D",
+          "start_point": "Point3D1",
+          "end_point": "Point3D2",
+          "center_point": "Point3D3",
+          "normal": "Vector3D0,0,1",
+          "radius": 0.45,
+          "reference_vector": "Vector3D1,-1.00001,0.0",
+          "amount": 3.14159
+        },
+        "Line3D2": {
+          "type": "Line3D",
+          "start_point": "Point3D2",
+          "end_point": "Point3D4"
+        },
+        "Arc3D2": {
+          "type": "Arc3D",
+          "start_point": "Point3D4",
+          "end_point": "Point3D5",
+          "center_point": "Point3D6",
+          "normal": "Vector3D0,0,1",
+          "radius": 0.45,
+          "reference_vector": "Vector3D1,0.0,-1.00001",
+          "amount": 3.14159
+        },
+        "Line3D3": {
+          "type": "Line3D",
+          "start_point": "Point3D5",
+          "end_point": "Point3D6"
+        },
+        "Line3D4": {
+          "type": "Line3D",
+          "start_point": "Point3D1",
+          "end_point": "Point3D2"
+        },
+        "Line3D5": {
+          "type": "Line3D",
+          "start_point": "Point3D2",
+          "end_point": "Point3D3"
+        },
+        "Line3D6": {
+          "type": "Line3D",
+          "start_point": "Point3D3",
+          "end_point": "Point3D4"
+        },
+        "Line3D7": {
+          "type": "Line3D",
+          "start_point": "Point3D4",
+          "end_point": "Point3D5"
+        },
+        "Line3D8": {
+          "type": "Line3D",
+          "start_point": "Point3D5",
+          "end_point": "Point3D6"
+        }
+      },
+      "profile_type": "Outline",
+      "profiles": [
+        {
+          "is_outer": true,
+          "profile_curves": [
+            {
+              "type": "Curve3D",
+              "curve": "Arc3D1",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D2",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Arc3D2",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D3",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D4",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D5",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D6",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D7",
+              "profile": "Profile1"
+            },
+            {
+              "type": "Curve3D",
+              "curve": "Line3D8",
+              "profile": "Profile1"
+            }
+          ]
+        }
+      ]
+    },
+    "Extrude1": {
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile_id": "Profile1",
+          "new_profile": false
+        }
+      ],
+      "operation": "NewBodyFeatureOperation",
+      "extent_type": "OneSideFeatureExtentType",
+      "start_extent": {
+        "type": "ProfilePlaneStartDefinition"
+      },
+      "extent_one": {
+        "distance": {
+          "value": 20.0
+        },
+        "type": "DistanceExtentDefinition"
+      }
+    }
+  }
+}

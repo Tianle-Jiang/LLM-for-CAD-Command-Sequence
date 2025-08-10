@@ -1,0 +1,1111 @@
+{
+  "entities": {
+    "Sketch1": {
+      "type": "Sketch",
+      "points": {
+        "Point3D1": {
+          "type": "Point3D",
+          "x": -21.0,
+          "y": 13.6,
+          "z": 0.0
+        }
+      },
+      "curves": {
+        "SketchCircle1": {
+          "type": "SketchCircle",
+          "center_point": "Point3D1",
+          "radius": 0.225
+        }
+      },
+      "profiles": {
+        "Profile1": {
+          "loops": [
+            {
+              "is_outer": true,
+              "profile_curves": [
+                {
+                  "type": "Circle3D",
+                  "curve": "SketchCircle1",
+                  "center_point": {
+                    "type": "Point3D",
+                    "x": -21.0,
+                    "y": 13.6,
+                    "z": 0.0
+                  },
+                  "normal": {
+                    "type": "Vector3D",
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0,
+                    "length": 1.0
+                  },
+                  "radius": 0.225
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "origin": {
+          "type": "Point3D",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "x_axis": {
+          "type": "Vector3D",
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "length": 1.0
+        },
+        "y_axis": {
+          "type": "Vector3D",
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "length": 1.0
+        },
+        "z_axis": {
+          "type": "Vector3D",
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0,
+          "length": 1.0
+        }
+      }
+    },
+    "Extrude1": {
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "Profile1",
+          "sketch": "Sketch1"
+        }
+      ],
+      "operation": "NewBodyFeatureOperation",
+      "extent_type": "OneSideFeatureExtentType",
+      "start_extent": {
+        "type": "ProfilePlaneStartDefinition"
+      },
+      "extent_one": {
+        "distance": {
+          "value": 0.15
+        },
+        "type": "DistanceExtentDefinition"
+      }
+    },
+    "Sketch2": {
+      "type": "Sketch",
+      "points": {
+        "Point3D2": {
+          "type": "Point3D",
+          "x": 20.9,
+          "y": 14.7,
+          "z": 0.0
+        },
+        "Point3D3": {
+          "type": "Point3D",
+          "x": -25.8,
+          "y": 10.8,
+          "z": 0.0
+        },
+        "Point3D4": {
+          "type": "Point3D",
+          "x": -24.65,
+          "y": 11.05,
+          "z": 0.0
+        },
+        "Point3D5": {
+          "type": "Point3D",
+          "x": 22.55,
+          "y": 12.85,
+          "z": 0.0
+        }
+      },
+      "curves": {
+        "SketchCircle2": {
+          "type": "SketchCircle",
+          "center_point": "Point3D2",
+          "radius": 0.17500001
+        },
+        "SketchLine3": {
+          "type": "SketchLine",
+          "start_point": "Point3D4",
+          "end_point": "Point3D3"
+        },
+        "SketchArc3": {
+          "type": "SketchArc",
+          "start_point": "Point3D3",
+          "end_point": "Point3D4",
+          "center_point": "Point3D2",
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": 0.99489586,
+            "y": 0.09520503,
+            "z": 0.0,
+            "length": 1.0
+          },
+          "arc_length": 0.05000002,
+          "reference_angle": 0.17452369,
+          "clockwise": false
+        },
+        "SketchCircle3": {
+          "type": "SketchCircle",
+          "center_point": "Point3D3",
+          "radius": 0.1
+        }
+      },
+      "profiles": {
+        "Profile2": {
+          "loops": [
+            {
+              "is_outer": true,
+              "profile_curves": [
+                {
+                  "type": "Circle3D",
+                  "curve": "SketchCircle2",
+                  "center_point": {
+                    "type": "Point3D",
+                    "x": 20.9,
+                    "y": 14.7,
+                    "z": 0.0
+                  },
+                  "normal": {
+                    "type": "Vector3D",
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0,
+                    "length": 1.0
+                  },
+                  "radius": 0.17500001
+                }
+              ]
+            },
+            {
+              "is_outer": false,
+              "profile_curves": [
+                {
+                  "type": "Circle3D",
+                  "curve": "SketchCircle3",
+                  "center_point": {
+                    "type": "Point3D",
+                    "x": -25.8,
+                    "y": 10.8,
+                    "z": 0.0
+                  },
+                  "normal": {
+                    "type": "Vector3D",
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0,
+                    "length": 1.0
+                  },
+                  "radius": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        "Profile3": {
+          "loops": [
+            {
+              "is_outer": true,
+              "profile_curves": [
+                {
+                  "type": "Circle3D",
+                  "curve": "SketchCircle3",
+                  "center_point": {
+                    "type": "Point3D",
+                    "x": -25.8,
+                    "y": 10.8,
+                    "z": 0.0
+                  },
+                  "normal": {
+                    "type": "Vector3D",
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 1.0,
+                    "length": 1.0
+                  },
+                  "radius": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transform": {
+        "origin": {
+          "type": "Point3D",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "x_axis": {
+          "type": "Vector3D",
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.0,
+          "length": 1.0
+        },
+        "y_axis": {
+          "type": "Vector3D",
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "length": 1.0
+        },
+        "z_axis": {
+          "type": "Vector3D",
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0,
+          "length": 1.0
+        }
+      }
+    },
+    "Extrude2": {
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "Profile3",
+          "sketch": "Sketch3"
+        }
+      ],
+      "operation": "JoinFeatureOperation",
+      "extent_type": "OneSideFeatureExtentType",
+      "start_extent": {
+        "type": "ProfilePlaneStartDefinition"
+      },
+      "extent_one": {
+        "distance": {
+          "value": 2.15
+        },
+        "type": "DistanceExtentDefinition"
+      }
+    },
+    "Sketch3": {
+      "type": "Sketch",
+      "points": {
+        "Point3D6": {
+          "type": "Point3D",
+          "x": 16.75,
+          "y": 19.95,
+          "z": 0.0
+        },
+        "Point3D7": {
+          "type": "Point3D",
+          "x": 17.45,
+          "y": 18.35,
+          "z": 0.0
+        },
+        "Point3D8": {
+          "type": "Point3D",
+          "x": 17.55,
+          "y": 19.85,
+          "z": 0.0
+        },
+        "Point3D9": {
+          "type": "Point3D",
+          "x": 16.45,
+          "y": 19.95,
+          "z": 0.0
+        },
+        "Point3D10": {
+          "type": "Point3D",
+          "x": 17.45,
+          "y": 19.75,
+          "z": 0.0
+        },
+        "Point3D11": {
+          "type": "Point3D",
+          "x": 17.45,
+          "y": 19.95,
+          "z": 0.0
+        },
+        "Point3D12": {
+          "type": "Point3D",
+          "x": 16.95,
+          "y": 20.15,
+          "z": 0.0
+        },
+        "Point3D13": {
+          "type": "Point3D",
+          "x": 17.05,
+          "y": 19.95,
+          "z": 0.0
+        },
+        "Point3D14": {
+          "type": "Point3D",
+          "x": 16.8,
+          "y": 20.4,
+          "z": 0.0
+        },
+        "Point3D15": {
+          "type": "Point3D",
+          "x": 16.5,
+          "y": 19.7,
+          "z": 0.0
+        },
+        "Point3D16": {
+          "type": "Point3D",
+          "x": 16.6,
+          "y": 19.9,
+          "z": 0.0
+        },
+        "Point3D17": {
+          "type": "Point3D",
+          "x": 16.3,
+          "y": 19.0,
+          "z": 0.0
+        },
+        "Point3D18": {
+          "type": "Point3D",
+          "x": 16.45,
+          "y": 19.99,
+          "z": 0.0
+        },
+        "Point3D19": {
+          "type": "Point3D",
+          "x": 17.0,
+          "y": 19.98,
+          "z": 0.0
+        },
+        "Point3D20": {
+          "type": "Point3D",
+          "x": 17.04,
+          "y": 20.09,
+          "z": 0.0
+        },
+        "Point3D21": {
+          "type": "Point3D",
+          "x": 17.06,
+          "y": 19.97,
+          "z": 0.0
+        },
+        "Point3D22": {
+          "type": "Point3D",
+          "x": 16.72,
+          "y": 19.96,
+          "z": 0.0
+        },
+        "Point3D23": {
+          "type": "Point3D",
+          "x": 16.68,
+          "y": 20.08,
+          "z": 0.0
+        },
+        "Point3D24": {
+          "type": "Point3D",
+          "x": 16.56,
+          "y": 20.07,
+          "z": 0.0
+        },
+        "Point3D25": {
+          "type": "Point3D",
+          "x": 16.54,
+          "y": 20.1,
+          "z": 0.0
+        },
+        "Point3D26": {
+          "type": "Point3D",
+          "x": 16.46,
+          "y": 20.11,
+          "z": 0.0
+        },
+        "Point3D27": {
+          "type": "Point3D",
+          "x": 16.48,
+          "y": 20.28,
+          "z": 0.0
+        },
+        "Point3D28": {
+          "type": "Point3D",
+          "x": 16.42,
+          "y": 20.32,
+          "z": 0.0
+        },
+        "Point3D29": {
+          "type": "Point3D",
+          "x": 16.44,
+          "y": 20.31,
+          "z": 0.0
+        },
+        "Point3D30": {
+          "type": "Point3D",
+          "x": 16.51,
+          "y": 20.39,
+          "z": 0.0
+        },
+        "Point3D31": {
+          "type": "Point3D",
+          "x": 16.63,
+          "y": 20.47,
+          "z": 0.0
+        },
+        "Point3D32": {
+          "type": "Point3D",
+          "x": 16.59,
+          "y": 20.43,
+          "z": 0.0
+        },
+        "Point3D33": {
+          "type": "Point3D",
+          "x": 16.52,
+          "y": 20.49,
+          "z": 0.0
+        },
+        "Point3D34": {
+          "type": "Point3D",
+          "x": 16.53,
+          "y": 20.41,
+          "z": 0.0
+        },
+        "Point3D35": {
+          "type": "Point3D",
+          "x": 16.58,
+          "y": 20.57,
+          "z": 0.0
+        },
+        "Point3D36": {
+          "type": "Point3D",
+          "x": 16.66,
+          "y": 20.61,
+          "z": 0.0
+        },
+        "Point3D37": {
+          "type": "Point3D",
+          "x": 16.64,
+          "y": 20.59,
+          "z": 0.0
+        },
+        "Point3D38": {
+          "type": "Point3D",
+          "x": 16.62,
+          "y": 20.67,
+          "z": 0.0
+        },
+        "Point3D39": {
+          "type": "Point3D",
+          "x": 16.74,
+          "y": 20.71,
+          "z": 0.0
+        },
+        "Point3D40": {
+          "type": "Point3D",
+          "x": 16.73,
+          "y": 20.77,
+          "z": 0.0
+        },
+        "Point3D41": {
+          "type": "Point3D",
+          "x": 16.79,
+          "y": 20.81,
+          "z": 0.0
+        },
+        "Point3D42": {
+          "type": "Point3D",
+          "x": 16.76,
+          "y": 20.83,
+          "z": 0.0
+        },
+        "Point3D43": {
+          "type": "Point3D",
+          "x": 16.78,
+          "y": 20.89,
+          "z": 0.0
+        },
+        "Point3D44": {
+          "type": "Point3D",
+          "x": 16.84,
+          "y": 20.91,
+          "z": 0.0
+        },
+        "Point3D45": {
+          "type": "Point3D",
+          "x": 16.82,
+          "y": 20.93,
+          "z": 0.0
+        },
+        "Point3D46": {
+          "type": "Point3D",
+          "x": 16.87,
+          "y": 21.01,
+          "z": 0.0
+        },
+        "Point3D47": {
+          "type": "Point3D",
+          "x": 16.88,
+          "y": 21.09,
+          "z": 0.0
+        },
+        "Point3D48": {
+          "type": "Point3D",
+          "x": 16.92,
+          "y": 21.15,
+          "z": 0.0
+        },
+        "Point3D49": {
+          "type": "Point3D",
+          "x": 16.94,
+          "y": 21.23,
+          "z": 0.0
+        },
+        "Point3D50": {
+          "type": "Point3D",
+          "x": 16.95,
+          "y": 21.31,
+          "z": 0.0
+        },
+        "Point3D51": {
+          "type": "Point3D",
+          "x": 16.99,
+          "y": 21.39,
+          "z": 0.0
+        },
+        "Point3D52": {
+          "type": "Point3D",
+          "x": 17.01,
+          "y": 21.45,
+          "z": 0.0
+        },
+        "Point3D53": {
+          "type": "Point3D",
+          "x": 17.03,
+          "y": 21.57,
+          "z": 0.0
+        },
+        "Point3D54": {
+          "type": "Point3D",
+          "x": 17.05,
+          "y": 21.67,
+          "z": 0.0
+        },
+        "Point3D55": {
+          "type": "Point3D",
+          "x": 17.07,
+          "y": 21.75,
+          "z": 0.0
+        },
+        "Point3D56": {
+          "type": "Point3D",
+          "x": 17.09,
+          "y": 21.83,
+          "z": 0.0
+        },
+        "Point3D57": {
+          "type": "Point3D",
+          "x": 17.11,
+          "y": 21.95,
+          "z": 0.0
+        },
+        "Point3D58": {
+          "type": "Point3D",
+          "x": 17.13,
+          "y": 22.09,
+          "z": 0.0
+        },
+        "Point3D59": {
+          "type": "Point3D",
+          "x": 17.15,
+          "y": 22.23,
+          "z": 0.0
+        },
+        "Point3D60": {
+          "type": "Point3D",
+          "x": 17.17,
+          "y": 22.41,
+          "z": 0.0
+        },
+        "Point3D61": {
+          "type": "Point3D",
+          "x": 17.19,
+          "y": 22.55,
+          "z": 0.0
+        },
+        "Point3D62": {
+          "type": "Point3D",
+          "x": 17.21,
+          "y": 22.73,
+          "z": 0.0
+        },
+        "Point3D63": {
+          "type": "Point3D",
+          "x": 17.23,
+          "y": 22.89,
+          "z": 0.0
+        },
+        "Point3D64": {
+          "type": "Point3D",
+          "x": 17.25,
+          "y": 23.01,
+          "z": 0.0
+        },
+        "Point3D65": {
+          "type": "Point3D",
+          "x": 17.27,
+          "y": 23.13,
+          "z": 0.0
+        },
+        "Point3D66": {
+          "type": "Point3D",
+          "x": 17.29,
+          "y": 23.25,
+          "z": 0.0
+        },
+        "Point3D67": {
+          "type": "Point3D",
+          "x": 17.31,
+          "y": 23.41,
+          "z": 0.0
+        },
+        "Point3D68": {
+          "type": "Point3D",
+          "x": 17.33,
+          "y": 23.55,
+          "z": 0.0
+        },
+        "Point3D69": {
+          "type": "Point3D",
+          "x": 17.35,
+          "y": 23.67,
+          "z": 0.0
+        },
+        "Point3D70": {
+          "type": "Point3D",
+          "x": 17.37,
+          "y": 23.79,
+          "z": 0.0
+        },
+        "Point3D71": {
+          "type": "Point3D",
+          "x": 17.39,
+          "y": 23.89,
+          "z": 0.0
+        },
+        "Point3D72": {
+          "type": "Point3D",
+          "x": 17.41,
+          "y": 23.99,
+          "z": 0.0
+        },
+        "Point3D73": {
+          "type": "Point3D",
+          "x": 17.43,
+          "y": 24.09,
+          "z": 0.0
+        },
+        "Point3D74": {
+          "type": "Point3D",
+          "x": 17.45,
+          "y": 24.21,
+          "z": 0.0
+        },
+        "Point3D75": {
+          "type": "Point3D",
+          "x": 17.47,
+          "y": 24.33,
+          "z": 0.0
+        },
+        "Point3D76": {
+          "type": "Point3D",
+          "x": 17.49,
+          "y": 24.45,
+          "z": 0.0
+        },
+        "Point3D77": {
+          "type": "Point3D",
+          "x": 17.51,
+          "y": 24.55,
+          "z": 0.0
+        },
+        "Point3D78": {
+          "type": "Point3D",
+          "x": 17.53,
+          "y": 24.67,
+          "z": 0.0
+        },
+        "Point3D79": {
+          "type": "Point3D",
+          "x": 17.55,
+          "y": 24.79,
+          "z": 0.0
+        },
+        "Point3D80": {
+          "type": "Point3D",
+          "x": 17.57,
+          "y": 24.89,
+          "z": 0.0
+        },
+        "Point3D81": {
+          "type": "Point3D",
+          "x": 17.59,
+          "y": 24.99,
+          "z": 0.0
+        },
+        "Point3D82": {
+          "type": "Point3D",
+          "x": 17.61,
+          "y": 25.09,
+          "z": 0.0
+        },
+        "Point3D83": {
+          "type": "Point3D",
+          "x": 17.63,
+          "y": 25.21,
+          "z": 0.0
+        },
+        "Point3D84": {
+          "type": "Point3D",
+          "x": 17.65,
+          "y": 25.33,
+          "z": 0.0
+        },
+        "Point3D85": {
+          "type": "Point3D",
+          "x": 17.67,
+          "y": 25.45,
+          "z": 0.0
+        },
+        "Point3D86": {
+          "type": "Point3D",
+          "x": 17.69,
+          "y": 25.55,
+          "z": 0.0
+        },
+        "Point3D87": {
+          "type": "Point3D",
+          "x": 17.71,
+          "y": 25.67,
+          "z": 0.0
+        },
+        "Point3D88": {
+          "type": "Point3D",
+          "x": 17.73,
+          "y": 25.79,
+          "z": 0.0
+        },
+        "Point3D89": {
+          "type": "Point3D",
+          "x": 17.75,
+          "y": 25.89,
+          "z": 0.0
+        },
+        "Point3D90": {
+          "type": "Point3D",
+          "x": 17.77,
+          "y": 25.99,
+          "z": 0.0
+        },
+        "Point3D91": {
+          "type": "Point3D",
+          "x": 17.79,
+          "y": 26.09,
+          "z": 0.0
+        },
+        "Point3D92": {
+          "type": "Point3D",
+          "x": 17.81,
+          "y": 26.21,
+          "z": 0.0
+        },
+        "Point3D93": {
+          "type": "Point3D",
+          "x": 17.83,
+          "y": 26.33,
+          "z": 0.0
+        },
+        "Point3D94": {
+          "type": "Point3D",
+          "x": 17.85,
+          "y": 26.45,
+          "z": 0.0
+        },
+        "Point3D95": {
+          "type": "Point3D",
+          "x": 17.87,
+          "y": 26.55,
+          "z": 0.0
+        },
+        "Point3D96": {
+          "type": "Point3D",
+          "x": 17.89,
+          "y": 26.67,
+          "z": 0.0
+        },
+        "Point3D97": {
+          "type": "Point3D",
+          "x": 17.91,
+          "y": 26.79,
+          "z": 0.0
+        },
+        "Point3D98": {
+          "type": "Point3D",
+          "x": 17.93,
+          "y": 26.89,
+          "z": 0.0
+        },
+        "Point3D99": {
+          "type": "Point3D",
+          "x": 17.95,
+          "y": 26.99,
+          "z": 0.0
+        },
+        "Point3D100": {
+          "type": "Point3D",
+          "x": 17.97,
+          "y": 27.09,
+          "z": 0.0
+        },
+        "Point3D101": {
+          "type": "Point3D",
+          "x": 17.99,
+          "y": 27.21,
+          "z": 0.0
+        },
+        "Point3D102": {
+          "type": "Point3D",
+          "x": 18.01,
+          "y": 27.33,
+          "z": 0.0
+        },
+        "Point3D103": {
+          "type": "Point3D",
+          "x": 18.03,
+          "y": 27.45,
+          "z": 0.0
+        },
+        "Point3D104": {
+          "type": "Point3D",
+          "x": 18.05,
+          "y": 27.55,
+          "z": 0.0
+        },
+        "Point3D105": {
+          "type": "Point3D",
+          "x": 18.07,
+          "y": 27.67,
+          "z": 0.0
+        },
+        "Point3D106": {
+          "type": "Point3D",
+          "x": 18.09,
+          "y": 27.79,
+          "z": 0.0
+        },
+        "Point3D107": {
+          "type": "Point3D",
+          "x": 18.11,
+          "y": 27.89,
+          "z": 0.0
+        },
+        "Point3D108": {
+          "type": "Point3D",
+          "x": 18.13,
+          "y": 27.99,
+          "z": 0.0
+        },
+        "Point3D109": {
+          "type": "Point3D",
+          "x": 18.15,
+          "y": 28.09,
+          "z": 0.0
+        },
+        "Point3D110": {
+          "type": "Point3D",
+          "x": 18.17,
+          "y": 28.21,
+          "z": 0.0
+        },
+        "Point3D111": {
+          "type": "Point3D",
+          "x": 18.19,
+          "y": 28.33,
+          "z": 0.0
+        },
+        "Point3D112": {
+          "type": "Point3D",
+          "x": 18.21,
+          "y": 28.45,
+          "z": 0.0
+        },
+        "Point3D113": {
+          "type": "Point3D",
+          "x": 18.23,
+          "y": 28.55,
+          "z": 0.0
+        },
+        "Point3D114": {
+          "type": "Point3D",
+          "x": 18.25,
+          "y": 28.67,
+          "z": 0.0
+        },
+        "Point3D115": {
+          "type": "Point3D",
+          "x": 18.27,
+          "y": 28.79,
+          "z": 0.0
+        },
+        "Point3D116": {
+          "type": "Point3D",
+          "x": 18.29,
+          "y": 28.89,
+          "z": 0.0
+        },
+        "Point3D117": {
+          "type": "Point3D",
+          "x": 18.31,
+          "y": 28.99,
+          "z": 0.0
+        },
+        "Point3D118": {
+          "type": "Point3D",
+          "x": 18.33,
+          "y": 29.09,
+          "z": 0.0
+        },
+        "Point3D119": {
+          "type": "Point3D",
+          "x": 18.35,
+          "y": 29.21,
+          "z": 0.0
+        },
+        "Point3D120": {
+          "type": "Point3D",
+          "x": 18.37,
+          "y": 29.33,
+          "z": 0.0
+        },
+        "Point3D121": {
+          "type": "Point3D",
+          "x": 18.39,
+          "y": 29.45,
+          "z": 0.0
+        },
+        "Point3D122": {
+          "type": "Point3D",
+          "x": 18.41,
+          "y": 29.55,
+          "z": 0.0
+        },
+        "Point3D123": {
+          "type": "Point3D",
+          "x": 18.43,
+          "y": 29.67,
+          "z": 0.0
+        },
+        "Point3D124": {
+          "type": "Point3D",
+          "x": 18.45,
+          "y": 29.79,
+          "z": 0.0
+        },
+        "Point3D125": {
+          "type": "Point3D",
+          "x": 18.47,
+          "y": 29.89,
+          "z": 0.0
+        },
+        "Point3D126": {
+          "type": "Point3D",
+          "x": 18.49,
+          "y": 29.99,
+          "z": 0.0
+        },
+        "Point3D127": {
+          "type": "Point3D",
+          "x": 18.51,
+          "y": 30.09,
+          "z": 0.0
+        },
+        "Point3D128": {
+          "type": "Point3D",
+          "x": 18.53,
+          "y": 30.21,
+          "z": 0.0
+        },
+        "Point3D129": {
+          "type": "Point3D",
+          "x": 18.55,
+          "y": 30.33,
+          "z": 0.0
+        },
+        "Point3D130": {
+          "type": "Point3D",
+          "x": 18.57,
+          "y": 30.45,
+          "z": 0.0
+        },
+        "Point3D131": {
+          "type": "Point3D",
+          "x": 18.59,
+          "y": 30.55,
+          "z": 0.0
+        },
+        "Point3D132": {
+          "type": "Point3D",
+          "x": 18.61,
+          "y": 30.67,
+          "z": 0.0
+        },
+        "Point3D133": {
+          "type": "Point3D",
+          "x": 18.63,
+          "y": 30.79,
+          "z": 0.0
+        },
+        "Point3D134": {
+          "type": "Point3D",
+          "x": 18.65,
+          "y": 30.89,
+          "z": 0.0
+        },
+        "Point3D135": {
+          "type": "Point3D",
+          "x": 18.67,
+          "y": 30.99,
+          "z": 0.0
+        },
+        "Point3D136": {
+          "type": "Point3D",
+          "x": 18.69,
+          "y": 31.09,
+          "z": 0.0
+        },
+        "Point3D137": {
+          "type": "Point3D",
+          "x": 18.71,
+          "y": 31.21,
+          "z": 0.0
+        },
+        "Point3D138": {
+          "type": "Point3D",
+          "x": 18.73,
+          "y": 31.33,
+          "z": 0.0
+        },
+        "Point3D139": {
+          "type": "Point3D",
+          "x": 18.75,
+          "y": 31.45,
+          "z": 0.0
+        },
+        "Point3D140": {
+          "type": "Point3D",
+          "x": 18.77,
+          "y": 31.55,
+          "z": 0.0
+        },
+        "Point3D141": {
+          "type": "Point3D",
+          "x": 18.79,
+          "y": 31.67,
+          "z": 0.0
+        }
+      }
+    }
+  }
+}

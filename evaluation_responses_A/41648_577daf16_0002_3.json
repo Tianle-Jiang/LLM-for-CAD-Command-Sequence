@@ -1,0 +1,154 @@
+{
+  "entities": {
+    "Sketch1": {
+      "type": "Sketch",
+      "points": {
+        "Point3D1": {
+          "type": "Point3D",
+          "x": -10.0,
+          "y": 7.5,
+          "z": 0.0
+        },
+        "Point3D2": {
+          "type": "Point3D",
+          "x": -9.895,
+          "y": 6.99799989,
+          "z": 0.0
+        },
+        "Point3D3": {
+          "type": "Point3D",
+          "x": -8.89399992,
+          "y": 7.44700011,
+          "z": 0.0
+        },
+        "Point3D4": {
+          "type": "Point3D",
+          "x": -10.0,
+          "y": 14.47,
+          "z": 0.0
+        },
+        "Point3D5": {
+          "type": "Point3D",
+          "x": -12.10799993,
+          "y": 15.31999984,
+          "z": 0.0
+        },
+        "Point3D6": {
+          "type": "Point3D",
+          "x": -11.89899991,
+          "y": 16.12999983,
+          "z": 0.0
+        }
+      },
+      "curves": {
+        "SketchArc1": {
+          "type": "SketchArc",
+          "start_point": "Point3D1",
+          "end_point": "Point3D2",
+          "center_point": "Point3D3",
+          "radius": 0.45,
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": -0.8660254037844386,
+            "y": 0.5000000121397316,
+            "z": 0.0,
+            "length": 1.0
+          },
+          "start_angle": 0.0,
+          "end_angle": 1.5707963267948966
+        },
+        "SketchLine1": {
+          "type": "SketchLine",
+          "start_point": "Point3D4",
+          "end_point": "Point3D1"
+        },
+        "SketchArc2": {
+          "type": "SketchArc",
+          "start_point": "Point3D5",
+          "end_point": "Point3D6",
+          "center_point": "Point3D3",
+          "radius": 0.45,
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": 0.8660254037844386,
+            "y": 0.5000000121397316,
+            "z": 0.0,
+            "length": 1.0
+          },
+          "start_angle": 0.0,
+          "end_angle": 1.5707963267948966
+        },
+        "SketchLine2": {
+          "type": "SketchLine",
+          "start_point": "Point3D2",
+          "end_point": "Point3D4"
+        },
+        "SketchLine3": {
+          "type": "SketchLine",
+          "start_point": "Point3D6",
+          "end_point": "Point3D5"
+        },
+        "SketchLine4": {
+          "type": "SketchLine",
+          "start_point": "Point3D1",
+          "end_point": "Point3D2"
+        },
+        "SketchSegment1": {
+          "type": "SketchSegment",
+          "start_point": "Point3D3",
+          "end_point": "Point3D4",
+          "profile_type": "Profile1",
+          "is_outer": false
+        },
+        "SketchSegment2": {
+          "type": "SketchSegment",
+          "start_point": "Point3D4",
+          "end_point": "Point3D3",
+          "profile_type": "Profile1",
+          "is_outer": true
+        },
+        "SketchSegment3": {
+          "type": "SketchSegment",
+          "start_point": "Point3D1",
+          "end_point": "Point3D5",
+          "profile_type": "Profile1",
+          "is_outer": false
+        },
+        "SketchSegment4": {
+          "type": "SketchSegment",
+          "start_point": "Point3D5",
+          "end_point": "Point3D1",
+          "profile_type": "Profile1",
+          "is_outer": true
+        },
+        "SketchSegment5": {
+          "type": "SketchSegment",
+          "start_point": "Point3D6",
+          "end_point": "Point3D5",
+          "profile_type": "Profile1",
+          "is_outer": false
+        }
+      }
+    },
+    "Extrude1": {
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "Profile1",
+          "transform": null
+        }
+      ],
+      "operation": "NewBodyFeatureOperation",
+      "extent_type": "OneSideFeatureExtentType",
+      "start_extent": {
+        "type": "PlaneStartDefinition"
+      },
+      "extent_one": {
+        "distance": {
+          "value": 20.0
+        },
+        "type": "DistanceExtentDefinition"
+      }
+    }
+  }
+}

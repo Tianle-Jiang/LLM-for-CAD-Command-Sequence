@@ -1,0 +1,162 @@
+{
+  "entities": {
+    "Sketch1": {
+      "type": "Sketch",
+      "points": {
+        "Point3D1": {
+          "type": "Point3D",
+          "x": -17.7,
+          "y": 9.99999837,
+          "z": 0.0
+        },
+        "Point3D2": {
+          "type": "Point3D",
+          "x": -19.8,
+          "y": 10.00000163,
+          "z": 0.0
+        },
+        "Point3D3": {
+          "type": "Point3D",
+          "x": -20.19999786,
+          "y": 11.49999525,
+          "z": 0.0
+        },
+        "Point3D4": {
+          "type": "Point3D",
+          "x": -18.79999684,
+          "y": 12.00000274,
+          "z": 0.0
+        },
+        "Point3D5": {
+          "type": "Point3D",
+          "x": -23.59999347,
+          "y": 13.50000546,
+          "z": 0.0
+        },
+        "Point3D6": {
+          "type": "Point3D",
+          "x": -26.39999079,
+          "y": 14.00000743,
+          "z": 0.0
+        },
+        "Point3D7": {
+          "type": "Point3D",
+          "x": -27.90098891,
+          "y": 15.40000494,
+          "z": 0.0
+        }
+      },
+      "curves": {
+        "SketchLine1": {
+          "type": "SketchLine",
+          "start_point": "Point3D1",
+          "end_point": "Point3D2"
+        },
+        "SketchArc1": {
+          "type": "SketchArc",
+          "start_point": "Point3D2",
+          "end_point": "Point3D3",
+          "center_point": "Point3D4",
+          "radius": 2.69999998,
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0,
+            "length": 1.0
+          },
+          "start_angle": 0.0,
+          "end_angle": 0.7853981633974482
+        },
+        "SketchCircle1": {
+          "type": "SketchCircle",
+          "center_point": "Point3D4",
+          "radius": 1.5
+        },
+        "SketchLine2": {
+          "type": "SketchLine",
+          "start_point": "Point3D3",
+          "end_point": "Point3D5"
+        },
+        "SketchArc2": {
+          "type": "SketchArc",
+          "start_point": "Point3D5",
+          "end_point": "Point3D6",
+          "center_point": "Point3D7",
+          "radius": 2.70000003,
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0,
+            "length": 1.0
+          },
+          "start_angle": 0.7853981633974482,
+          "end_angle": 1.5707963267948966
+        },
+        "SketchCircle2": {
+          "type": "SketchCircle",
+          "center_point": "Point3D7",
+          "radius": 1.5
+        },
+        "SketchLine3": {
+          "type": "SketchLine",
+          "start_point": "Point3D6",
+          "end_point": "Point3D2"
+        },
+        "SketchArc3": {
+          "type": "SketchArc",
+          "start_point": "Point3D2",
+          "end_point": "Point3D3",
+          "center_point": "Point3D4",
+          "radius": 2.69999998,
+          "reference_vector": {
+            "type": "Vector3D",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0,
+            "length": 1.0
+          },
+          "start_angle": 1.5707963267948966,
+          "end_angle": 2.74398381377893
+        },
+        "SketchCircle3": {
+          "type": "SketchCircle",
+          "center_point": "Point3D4",
+          "radius": 1.5
+        },
+        "SketchLine4": {
+          "type": "SketchLine",
+          "start_point": "Point3D4",
+          "end_point": "Point3D1"
+        }
+      }
+    },
+    "Extrude1": {
+      "type": "ExtrudeFeature",
+      "profiles": [
+        {
+          "profile": "Profile2",
+          "sketch": "Sketch1"
+        }
+      ],
+      "operation": "NewBodyFeatureOperation",
+      "extent_type": "TwoSidesExtentType",
+      "start_extent": {
+        "type": "StartExtentDefinition"
+      },
+      "extent_one": {
+        "distance": {
+          "value": -0.1
+        },
+        "type": "DistanceExtentDefinition"
+      },
+      "extent_two": {
+        "distance": {
+          "value": 3.60000355
+        },
+        "type": "DistanceExtentDefinition"
+      }
+    }
+  }
+}
